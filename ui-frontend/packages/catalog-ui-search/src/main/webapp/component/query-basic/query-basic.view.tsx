@@ -48,12 +48,7 @@ import {
   KeyDisseminatorsFilter,
   isKeyDisseminatorsFilterClass,
 } from '../filter-builder/basic-search-filters/key-disseminators-filter/filter.structure'
-<<<<<<< HEAD
 import { KeyDisseminatorsFilterAutoComplete } from '../filter-builder/basic-search-filters/key-disseminators-filter/key-disseminators-filter-autocomplete'
-=======
-import { KeyDisseminatorsFilterAutoComplete } from '../filter-builder/basic-search-filters/key-disseminators-filter/autocomplete'
->>>>>>> 44194f43dd ([ISR-23457] add key disseminator filter to basic search)
-
 function isNested(filter: any) {
   let nested = false
   filter.filters.forEach((subfilter: any) => {
