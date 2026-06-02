@@ -49,6 +49,7 @@ import {
   isKeyDisseminatorsFilterClass,
 } from '../filter-builder/basic-search-filters/key-disseminators-filter/filter.structure'
 import { KeyDisseminatorsFilterAutoComplete } from '../filter-builder/basic-search-filters/key-disseminators-filter/key-disseminators-filter-autocomplete'
+
 function isNested(filter: any) {
   let nested = false
   filter.filters.forEach((subfilter: any) => {
