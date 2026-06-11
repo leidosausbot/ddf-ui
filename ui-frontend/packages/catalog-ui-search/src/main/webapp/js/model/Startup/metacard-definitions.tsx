@@ -1,3 +1,4 @@
+import { KeyDisseminatorsPropertyName } from '../../../component/filter-builder/basic-search-filters/key-disseminators-filter/property-name'
 import { BasicDataTypePropertyName } from '../../../component/filter-builder/reserved.properties'
 import { Subscribable } from '../Base/base-classes'
 import { StartupData } from './startup'
@@ -189,7 +190,13 @@ class MetacardDefinitions extends Subscribable<{
     return this.attributeMap?.[attributeName]?.enumerations || []
   }
   getSearchOnlyAttributes = () => {
-    return ['anyText', 'anyGeo', 'anyDate', BasicDataTypePropertyName]
+    return [
+      'anyText',
+      'anyGeo',
+      'anyDate',
+      BasicDataTypePropertyName,
+      KeyDisseminatorsPropertyName,
+    ]
   }
   getSortedAttributes = () => {
     return this.sortedAttributes || []

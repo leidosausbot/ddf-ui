@@ -11,6 +11,7 @@ import user from '../singletons/user-instance'
 import { StartupDataStore } from '../../js/model/Startup/startup'
 import { BasicDataTypePropertyName } from './reserved.properties'
 import { render } from '@testing-library/react'
+import { KeyDisseminatorsPropertyName } from './basic-search-filters/key-disseminators-filter/property-name'
 
 // trim whitespace, lowercase
 function customNormalizer(text: string) {
@@ -104,6 +105,13 @@ function addTestDefs() {
       [BasicDataTypePropertyName]: {
         type: 'STRING',
         id: BasicDataTypePropertyName,
+        multivalued: false,
+        isInjected: false,
+        hidden: true,
+      },
+      [KeyDisseminatorsPropertyName]: {
+        type: 'STRING',
+        id: KeyDisseminatorsPropertyName,
         multivalued: false,
         isInjected: false,
         hidden: true,
